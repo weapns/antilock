@@ -1,6 +1,5 @@
 local P1000ToggleKey = "m" -- Change that to whatever keybind: "t"
 
-
 --// Services
 checkcaller = checkcaller
 newcclosure = newcclosure
@@ -10,7 +9,6 @@ local PastedSources = false
 local BruhXD = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Bullshit = LocalPlayer:GetMouse()
-
 
 --// Toggles
 Bullshit.KeyDown:Connect(function(SayNoToOblivity)
