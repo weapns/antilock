@@ -1,4 +1,8 @@
-local P1000ToggleKey = "m" -- Change that to whatever keybind: "t"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua",true))()
+
+
+
+local P1000ToggleKey = "h" -- Change that to whatever keybind: "t"
 
 --// Services
 checkcaller = checkcaller
