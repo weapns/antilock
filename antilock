@@ -1,3 +1,6 @@
+local P1000ToggleKey = "m" -- Change that to whatever keybind: "t"
+
+
 --// Services
 checkcaller = checkcaller
 newcclosure = newcclosure
