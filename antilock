@@ -12,18 +12,26 @@ local Bullshit = LocalPlayer:GetMouse()
 
 --// Toggles
 Bullshit.KeyDown:Connect(function(SayNoToOblivity)
-    if SayNoToOblivity == string.lower(P1000ToggleKey) then
-        pcall(function()
-            if PastedSources == false then
-                PastedSources = true
-                print("Enabled P1000")
-            elseif PastedSources == true then
-                PastedSources = false
-                print("Disabled P1000")
-            end
-        end)
+    print("Key pressed:", SayNoToOblivity)  -- Debugging statement
+    print("Toggle Key:", P1000ToggleKey)    -- Debugging statement
+
+    if SayNoToOblivity then  -- Check if SayNoToOblivity is not nil
+        if SayNoToOblivity == string.lower(P1000ToggleKey) then
+            pcall(function()
+                if not PastedSources then
+                    PastedSources = true
+                    print("Enabled P1000")
+                else
+                    PastedSources = false
+                    print("Disabled P1000")
+                end
+            end)
+        end
+    else
+        print("SayNoToOblivity is nil!")  -- Debugging statement
     end
 end)
+
 
 Bullshit.KeyDown:Connect(function(SayNoToOblivity)
     if SayNoToOblivity == ("=") then
